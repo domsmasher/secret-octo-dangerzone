@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="js/core/utils.js"></script>
+<script type="text/javascript" src="js/core/core.js"></script>
+<script type="text/javascript" src="js/core/sandbox.js"></script>
+<script type="text/javascript">
+    var widget1 = Core.register('widget1', function (sandbox) {
+        return {
+            initialize: function () {
+                console.log('started!');
+            },
+            destroy: function () {
+                console.log('destroied!');
+            }
+        };
+    });
+
+    Core.startAll();
+</script>
+</body>
+</html>
